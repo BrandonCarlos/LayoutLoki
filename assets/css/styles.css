@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=B612:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --color-blue: #0072D2;
+  --color-yellow: #FFA800;
+  --color-black: #131318;
+  --color-white: #FFFFFF;
+  --color-primary-white: #212429;
+  --color-primary-black: #FFFFFF;
+  
+  /* Font */
+  --b612: 'B612', sans-serif;
+}
+
+body {
+  font-family: var(--b612);
+  color: var(--color-white);
+}
+
+.main-content {
+  max-width: 98rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.main-bg {
+  background: url('/assets/img/image.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  margin: 2rem 0;
+}
+
+.black-bg {
+  background: black;
+}
+
+.fundo {
+  max-height: 92.9rem;
+  background: #000;
+}
+
+.section {
+  min-height: 92.9vh; 
+  position: relative
+}
+
+.wrapper-modal {
+  position: absolute;
+  top: 3.3rem;
+  left: 0;
+  right: 0;
+  bottom: 3.2rem;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.header {
+  z-index: 1;
+  padding-top: 6.5rem;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.header h3 {
+  line-height: 2.43rem;
+  margin-bottom: 3.5rem;
+}
+
+.header h1 {
+  font-size: 9.6rem;
+  line-height: 11.664rem;
+}
+
+.loki-img {
+  background: url('/assets/img/capa.svg');
+  height: 26.7rem;
+  width: 18.4rem;
+  border-radius: 2rem;
+  margin-right: 7.3rem;
+}
+
+.loki-description,
+.loki-time-star-year {
+  margin-top: 12.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loki-paragrapy p {
+  max-width: 72.2rem;
+  color: var(--color-white);
+  font-size: 2rem;
+}
+
+.loki-time-star-year {
+  font-weight: bold;
+  max-width: 64rem;
+  justify-content: space-between;
+  margin-top: 4.2rem;
+}
+
+.time {
+  display: flex;
+  align-items: center;
+}
+
+.time img {
+  margin-right: 1.2rem;
+}
+
+.loki-buttons {
+  margin-top: 4.5rem;
+}
+
+.loki-buttons button {
+  max-width: 19.4rem;
+  height: 5.2rem;
+  border-radius: .3rem;
+  background: var(--color-blue);
+  padding: 1.5rem 2.7rem;
+  text-transform: uppercase;
+  color: var(--color-white);
+  font-weight: bold;
+  border: none;
+  font-size: 1.6rem;
+}
+
+.loki-buttons button + button {
+  margin-left: 2.1rem
+}
+
+.loki-buttons button:nth-child(2) {
+  background: var(--color-black);
+  border: 1px solid var(--color-white);
+}
